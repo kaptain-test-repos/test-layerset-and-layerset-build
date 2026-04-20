@@ -7,5 +7,5 @@ metadata:
     kaptain.org/description: Combined layerset referencing local and cross-org layers
 spec:
   layers:
-    - layer-and-layerset-build:1.0.1-PRERELEASE
+    - layer-and-layerset-build:1.0.1
     - ghcr.io/kube-kaptain/layer/layer-github-flow-strict:1.3
