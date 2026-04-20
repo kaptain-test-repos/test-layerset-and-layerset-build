@@ -1,0 +1,1 @@
+When updating or editing this project, ensure both `KaptainPM.yaml` and `src/layerset/KaptainPM.yaml` use an `apiVersion:` of `kaptain.org/<version>` where `<version>` matches the contents of `src/schemas/version` in the `buildon-github-actions` repo. Bump both files together whenever that schema version changes.

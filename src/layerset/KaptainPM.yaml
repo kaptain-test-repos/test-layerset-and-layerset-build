@@ -1,0 +1,11 @@
+apiVersion: kaptain.org/1.15
+kind: kubernetes-app-docker-dockerfile
+metadata:
+  labels:
+    kaptain.org/layer-type: combined
+  annotations:
+    kaptain.org/description: Combined layerset referencing local and cross-org layers
+spec:
+  layers:
+    - layer-and-layerset-build:1.0.1-PRERELEASE
+    - ghcr.io/kube-kaptain/layer/layer-github-flow-strict:1.3
