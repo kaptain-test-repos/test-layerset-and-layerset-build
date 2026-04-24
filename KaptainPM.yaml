@@ -1,0 +1,15 @@
+apiVersion: kaptain.org/1.15
+kind: layer-and-layerset-build
+
+spec:
+  global:
+    projectName:
+      stripRepositoryNamePrefix: test
+  main:
+    hooks:
+      preBuild: test-hooks/pre-build.bash
+      preTaggingTests: test-hooks/pre-tagging-tests.bash
+      postVersionsAndNaming: test-hooks/post-versions-and-naming.bash
+      preDockerPrepare: test-hooks/pre-docker-prepare.bash
+      postDockerTests: test-hooks/post-docker-tests.bash
+      postBuild: test-hooks/post-build.bash
