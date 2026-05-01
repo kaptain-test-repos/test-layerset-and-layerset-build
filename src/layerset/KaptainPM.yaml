@@ -1,4 +1,4 @@
-apiVersion: kaptain.org/1.15
+apiVersion: kaptain.org/1.16
 kind: kubernetes-app-docker-dockerfile
 metadata:
   labels:
